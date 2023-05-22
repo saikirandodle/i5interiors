@@ -3,6 +3,7 @@
 }
 .bg-light {
   background-color: #ffffff!important;
+  padding: 0;
 }
 
 .bannerImg{
@@ -203,4 +204,20 @@ ul li p {
 
 .bansize{
   font-size: 28px;
+}
+
+.cntUs{
+    text-align: center;
+    padding: 10px;
+    color: #c82c2c;
+    border-radius: 20px;
+    background-color: #ffc107;
+}
+
+.cntUsTxt{
+  color: #2b2b2b;
+}
+
+span a {
+  color: #2b2b2b;
 }
