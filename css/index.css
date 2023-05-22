@@ -7,7 +7,7 @@
 
 .bannerImg{
   width: 100%;
-  opacity: 0.5;
+  /* opacity: 0.5; */
 }
 
 .iconSize{
@@ -199,4 +199,8 @@ ul li p {
 
 .fs20{
   font-size: 20px;
+}
+
+.bansize{
+  font-size: 28px;
 }
