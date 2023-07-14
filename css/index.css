@@ -6,8 +6,13 @@
   padding: 0;
 }
 
+.iconSize1{
+  font-size: 45px;
+}
+
 .iconSize{
   font-size: 45px;
+  border: 3px dashed orange;
 }
 
 .textCenter{
@@ -21,7 +26,7 @@ margin-right: 20%;
 }
 
 .bgCol{
-  background-color: #7dbdd1;
+  background-color: #fff3f8;
 }
 
 .bgCol1{
@@ -133,6 +138,8 @@ background-color:rgb(136, 134, 134);
 
 .divSpecs{
   height: 100%;
+  border-top: 1px solid #d1d0d0;
+  border-bottom: 1px solid #d1d0d0;
 }
 
 
@@ -154,8 +161,8 @@ background-color:rgb(136, 134, 134);
 .circle-fa{
   display: inline-block;
   border-radius: 60px;
-  box-shadow: 0 0 2px #888;
-  padding: 0.5em 0.6em;
+  /* box-shadow: 0 0 2px #888; */
+  padding: 22px;
 }
 
 .comjust{
@@ -164,16 +171,16 @@ background-color:rgb(136, 134, 134);
 
 .text-white {
     color: white !important;
-    background-color: #5ea69f!important;
+    background-color: #86438b!important
 }
 
 ul li {
   color: #ffbb29;
 }
 
-ul li p {
+/* ul li p {
   color: black;
-}
+} */
 
 .thmclr{
   color: #ffbb29;
@@ -242,8 +249,12 @@ span a {
 
 .ss{
   width: 41%;
-  padding: 2px;
   float: left;
+}
+
+.rr{
+  width: 100%;
+   
 }
 
 p.white{
@@ -271,32 +282,52 @@ p.white{
   border-radius: 10px;
 }
 
-.pink{
-  color: #fd2abe;
+.pinkd:hover{
+  color: #fe29be;
 }
 
-.orange{
+.oranged:hover{
   color: #feaa3b;
 }
 
-.green{
+.greend:hover{
   color: #95fe2e;
 }
 
-.lblue{
+.lblued:hover{
   color: #41c1e3;
 }
 
-.lavender{
+.lavenderd:hover{
   color: #b629fe;
 }
 
+.pink{
+  color: #ff8edd;
+}
+
+.orange{
+  color: #f3c485;
+}
+
+.green{
+  color: #b1dd87;
+}
+
+.lblue{
+  color: #78cde3;
+}
+
+.lavender{
+  color: #c695de;
+}
+
 .bgCol11{
-  background-color: #e1dba1;
+  background-color: #fffde4;
 }
 
 .bgCol22{
-  background-color: #e3ebe4;
+  background-color: #dbf3de;
 }
 
 .card-body{
@@ -313,10 +344,11 @@ h1, h2, h3, h4, h5, h6 {
 .hbrand{
   height: 112px;
   padding: 30px;
-  background-color: #FBEAEB;
+  background-color: #FBEAEB; 
+  margin-right: 2px;
 }
 
-td:hover .hbrand{
+span:hover .hbrand{
   background-color: white;
   border: 3px solid #2F3C7E;
 }
@@ -340,8 +372,8 @@ h4{
 }
  
 .cImg{
-  width: 44%;
-  border-radius: 100px;
+  width: 70%;
+  /* border-radius: 100px; */
 }
 
 .dcenter{
@@ -349,8 +381,8 @@ h4{
 }
 
 .custCard{
-  background-color: #9f5f97d6;
-  color: white;
+  background-color: #fff3febd;
+  color: #5d5d5d;
 }
 
 .abt{
@@ -373,3 +405,75 @@ background-color: #7f49e1;
 background-color: #be1cbb;
 background-color: #278363;
 background-color: #00ebf1; */
+
+.gray{
+  color: #5d5d5d;
+}
+
+.dash {
+  width: 11%;
+  border-top: 3px dotted #006ebe;
+  margin: 50px -15px 0px -9px;
+  }
+
+._5S-v{
+  border-top: 1px dashed var(--primary);
+  position: relative;
+  top: 48px;
+  width: 71%;
+}
+
+.padZ{
+  padding: 0px;
+}
+
+.pad10{
+  padding-bottom: 15px;
+}
+
+.card {
+  border: 1px solid rgb(255 192 52);
+}
+
+/* .fa-spin-hover:hover {
+  -webkit-animation: fa-spin 2s infinite linear;
+  -moz-animation: fa-spin 2s infinite linear;
+  -o-animation: fa-spin 2s infinite linear;
+  animation: fa-spin 2s infinite linear;
+} */
+
+.f18{
+  font-size: 18px
+}
+
+ .bg3 {
+  background-image: url(https://img.freepik.com/premium-vector/technology-connection-digital-data-white-background_32996-546.jpg?w=1060);
+  background-repeat: no-repeat;
+  background-size: cover;
+} 
+
+.footerBG {
+  background-image: url(https://img.freepik.com/premium-vector/technology-connection-digital-data-white-background_32996-546.jpg?w=1060);
+  background-repeat: no-repeat;
+  background-size: cover;
+} 
+
+.borderTB{
+  border-top: 1px solid #e4e4e4;
+  border-bottom: 1px solid #e4e4e4;
+}
+
+.bgCol1{
+  background-color: #e3d0bc;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#btn-back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+}

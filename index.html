@@ -15,6 +15,41 @@
       <title>i5 interiors</title>
       <link rel = "icon" href = "./images/i5_logo_sm - Copy.png" type = "image/x-icon">
     <script>
+
+    $(document).ready(function(){
+
+        $('[data-toggle="popover"]').popover({
+            placement : 'bottom',
+            trigger : 'hover'
+        });
+
+        let mybutton = document.getElementById("btn-back-to-top");
+
+      // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () {
+          scrollFunction();
+        };
+
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 20 ||
+          document.documentElement.scrollTop > 20
+        ) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+      // When the user clicks on the button, scroll to the top of the document
+      mybutton.addEventListener("click", backToTop);
+
+      function backToTop() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+    });
+ 
+
      $(".carousel").swipe({
       swipe: function(event, direction, distance, duration, fingerCount, fingerData) {
         if (direction == 'left') $(this).carousel('next');
@@ -25,6 +60,7 @@
     </script>
   </head>
   <body>
+     
     <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
           <div><img src="./images/logo.png" alt="" class="logo" /></div>
@@ -53,9 +89,9 @@
           <div class="info">
             <div class="container">
                 <div class="row">
-                  <div class="col-md-12">
+                  <div class="col-md-12 f18">
                      <i class="fa-solid fa-phone blue"></i>
-                    <strong class="blue">Call:</strong>&nbsp;<strong><a style="color: #fab207;" href="tel:+919059109056">+91-9059109056</a></strong> | 
+                    <strong class="blue">Call:</strong>&nbsp;<strong><span style="color: #fab207;" >+91-9059109056</span></strong> | 
                       <i class="fa-brands fa-whatsapp blue"></i> <strong class="blue">Whatsapp:</strong> &nbsp;<strong><a style="color: #fab207;" href="tel:+919858156156">+91-9858156156</a></strong> | 
                       </strong><i class="fa fa-envelope-o blue"></i>&nbsp;<strong class="blue">Email us:</strong>&nbsp;&nbsp;<strong><a style="color: #fab207;" href="mailto:i5interiors@gmail.com">i5interiors@gmail.com</a></strong>
                   </div>    
@@ -75,24 +111,36 @@
       
       <div>
         <div class="container">
-          <br><br><br>
+          <br><br><br><br>
           <div class="row">
             <div class="col-sm"></div>
             <div class="col-sm textCenter">
-              <i class="fa-solid fa-compass-drafting iconSize" style="color: #ffbb29;"></i><br>
-              Customized designs
+              <i class="fa-solid fa-compass-drafting iconSize1 pink pinkd pad10"></i> 
+              <span class="f18">Best&nbsp;Designs</span>
             </div>
+            <div class="col-sm"></div>
             <div class="col-sm textCenter">
-              <i class="fa-solid fa-star iconSize" style="color: #ffbb29;"></i><br>
-              Best Quality
+              <i class="fa-solid fa-star iconSize1 orange oranged pad10"></i> 
+              <span class="f18">Premium&nbsp;Quality</span>
             </div>
+            <div class="col-sm"></div>
             <div class="col-sm textCenter">
-              <i class="fa-solid fa-tags iconSize" style="color: #ffbb29;"></i><br>
-              Best Price
+              <i class="fa-solid fa-tags iconSize1 green greend pad10"></i> 
+              <span class="f18">Budget&nbsp;Friendly</span>
+            </div>
+            <div class="col-sm"></div>
+            <div class="col-sm textCenter">
+              <i class="fa-solid fa-truck iconSize1 lblue lblued pad10"></i> 
+              <span class="f18">OnTime&nbsp;Delivery</span>
+            </div>
+            <div class="col-sm"></div>
+            <div class="col-sm textCenter">
+              <i class="fa-solid fa-screwdriver-wrench iconSize1 lavender lavenderd pad10"></i> 
+              <span class="f18">Best&nbsp;Service</span>
             </div>
             <div class="col-sm"></div>
           </div>
-          <br><br><br>
+          <br><br><br><br>
         </div>
       </div>
 
@@ -101,27 +149,26 @@
         <div class="bgCol divSpecs">
           <img src="./images/living-room-themes.jpg" alt="" class="ss"/>
           <br><br><br> <div class="textCenter">
-            <h1 class="ml blue">The home design you crave</h1>
+            <h1 class="ml blue">Experience the i5 home design</h1>
           </div>
           <div class="row">
             <div class="col-md-2"></div>
              <div class="col-md-10">
               <br> <br>  
-              <p class="white">
+              <p class="gray">
                   Our team of experienced interior designers understands the power of a well-designed space.
               </p>
-              <p class="white">
+              <p class="gray">
                   We believe that the right combination of aesthetics, functionality, and comfort can truly make 
                   a difference in how you experience your home or workplace.
               </p>
-              <p class="white">
+              <p class="gray">
                   Whether you're looking to revamp a single room or undertake a complete interior makeover, we are here to guide you through the 
                   process and bring your vision to life.
               </p>
                
            </div>
           </div>
-          
           <br><br><br> 
         </div>
       </div>
@@ -131,17 +178,17 @@
           <br><br><br> 
           <div class="row margin0">
             <div class="col-sm"></div>
-            <div class="col-sm textCenter">
-              <span class="numbers">500 +</span> <br> 
-              Happy Customers
+            <div class="col-sm textCenter"> 
+              <span class="numbers counter">500+</span> <br> 
+              <span class="f18">Happy Customers</span>
             </div>
             <div class="col-sm textCenter">
-              <span class="numbers">350 +</span> <br>
-              Design Experts
+              <span class="numbers">350+</span> <br>
+              <span class="f18">Design Experts</span>
             </div>
             <div class="col-sm textCenter">
-              <span class="numbers">4 +</span> <br>
-              All Over India
+              <span class="numbers">4+</span> <br>
+              <span class="f18">Cities in India</span>
             </div>
             <div class="col-sm"></div>
           </div>
@@ -175,7 +222,7 @@
            <div class="col-md-4">
             <div class="card p-3 mb-2 h-full m2 card2">
              
-                <h4 class="fb"><i class="fa-solid fa-lightbulb" style="color: #ffbb29;"></i>&nbsp;&nbsp;Technology & science</h4>
+                <h4 class="fb"><i class="fa-solid fa-lightbulb" style="color: #ffbb29;"></i>&nbsp;&nbsp;Technology & Science</h4>
              
               <br>
               <ul class="list-disc">
@@ -188,7 +235,7 @@
           </div>
            <div class="col-md-4">
              <div class="card p-3 mb-2 h-full m3 card3">
-              <h4 class="fb"><i class="fas fa-dollar-sign" style="color: #ffbb29;"></i>&nbsp;&nbsp;Price benefits</h4>
+              <h4 class="fb"><i class="fas fa-dollar-sign" style="color: #ffbb29;"></i>&nbsp;&nbsp;Price Benefits</h4>
               <br>
               <ul class="list-disc ">
                 <li class="mb-4"><p class="body_small white">Price-match guarantee³ - Price match to a valid quote in comparison with a branded player and for exact scope.</p></li>
@@ -205,32 +252,38 @@
 
 
       <div>
-        <div class="divSpecs">
+        <div class="">
           <br><br><br> 
           <div class="textCenter">
             <h1 class="blue">How it works</h1>
             <br><br>
             <div class="container">
+              <!-- <div class="m-auto relative _5S-v"></div> -->
               <div class="row">
-                <div class="col-sm">
-                  <i class="circle-fa fa-solid fa-user iconSize pink"></i><br><br>
-                  Meet a designer
+                
+                <div class=" padZ">
+                  <i class="circle-fa fa-solid fa-user iconSize pink pinkd"></i><br><br>
+                  <span class="f18">Meet a designer</span>
                 </div>
-                <div class="col-sm">
-                  <i class="circle-fa fa-solid fa-couch iconSize orange"></i><br><br>
-                  Book a renovation
+                 <div class="dash"></div> &nbsp;
+                <div class=" padZ">
+                  <i class="circle-fa fa-solid fa-couch iconSize orange oranged"></i><br><br>
+                  <span class="f18">Book a renovation</span>
                 </div>
-                <div class="col-sm">
-                  <i class="circle-fa fa-solid fa-rocket iconSize green"></i><br><br>
-                  (50% payment) Execution begins
+                 <div class="dash"></div> &nbsp;
+                <div class="padZ">
+                  <i class="circle-fa fa-solid fa-rocket iconSize green greend"></i><br><br>
+                  <span class="f18">Execution begins</span>
                 </div>
-                <div class="col-sm">
-                  <i class="circle-fa fa-solid fa-screwdriver-wrench iconSize lblue"></i><br><br>
-                  (100% payment) Final installations
-                </div>
-                <div class="col-sm">
-                  <i class="circle-fa fa-solid fa-truck iconSize lavender"></i><br><br>
-                  Move in and enjoy!
+                 <div class="dash"></div> &nbsp;&nbsp;&nbsp;
+                <div class="padZ"> 
+                  <i class="circle-fa fa-sharp fa-solid fa-sack-dollar iconSize lblue lblued"></i><br><br>
+                  <span class="f18">Final payment</span>
+                </div>&nbsp;&nbsp;
+                 <div class="dash"></div> 
+                <div class="padZ">
+                  <i class="circle-fa fa-solid fa-truck iconSize lavender lavenderd"></i><br><br>
+                  <span class="f18">Move in and enjoy!</span>
                 </div>
               </div>
             </div>
@@ -240,7 +293,7 @@
 
 
       <div>
-        <div class="bgCol11">
+        <div class="divSpecs bgCol11">
           <br><br><br> 
           <div class="textCenter">
             <h1 class="blue">Homes for every style</h1>
@@ -390,18 +443,18 @@
 
       <div class="container-fluid carouselWidth">
         <br><br><br> 
-        <h1 class="text-center mb-3 blue">We'll let our clients do the talking</h1>
-        <h6 class="text-center mb-3">Here’s what they have to say</h6><br>
+        <h1 class="text-center mb-3 blue">Let's hear from our customers</h1>
+        <h6 class="text-center mb-3">Feedback and reviews from our valued customers.</h6><br>
         <div class="container">
         <div class="row">
            <div class="col-md-4">
-            <div class="card p-3 mb-2 h-full dcenter custCard">
+            <div class="card p-3 mb-2 h-full dcenter ">
               <img src="./images/c1.png" class="card-img-top custimg cImg" alt="...">
               <br>
               <p class="comjust">i5 INTERIORS have done a wonderful job to the happiest ending of my satisfaction. 
                 The designs are contemporary and not seen else where.
                 Wish you deliver many such projects across the country and make people happier.</p>
-                <br>
+                
                 <table style="width: 5%;">
                   <tr>
                     <td>
@@ -423,21 +476,21 @@
                 </table>
                 <h5 class="blue">Gujja Yugandar Rao</h5>
                 <h6>MAK villas- Adibatla</h6>
-              <br>
+              
             </div>
           </div>
            <div class="col-md-4">
-            <div class="card p-3 mb-2 h-full dcenter custCard">
+            <div class="card p-3 mb-2 h-full dcenter ">
               <img src="./images/c2.png" class="card-img-top custimg cImg" alt="...">
               <br>
-              <p class="comjust">" Very talented and committed
+              <p class="comjust">"Very talented and committed
                 designers with trendy thoughts.
                 The moment we enter into our
                 home we feel joyful and relaxed
                 because of the elegant look by
                 the accomplished interior design
                 One word - SUPERB "</p>
-                <br>
+                 
                 <table style="width: 5%;">
                   <tr>
                     <td>
@@ -459,13 +512,14 @@
                 </table>
                 <h5 class="blue">Madhoos</h5>
                 <h6>Rineesh Signature - Manikonda</h6>
-              <br>
+               
             </div>
           </div>
            <div class="col-md-4">
-             <div class="card p-3 mb-2 h-full dcenter custCard">
+             <div class="card p-3 mb-2 h-full dcenter">
               
               <img src="./images/c3.png" class="card-img-top custimg cImg" alt="...">
+              <br>
               <p class="comjust">Attention to detail and quality, and
                 their extremely professional work
                 ethic are what stood out in their
@@ -473,8 +527,7 @@
                 us. One of the key diferentiators, is
                 the use of best quality materials
                 available within the budget."</p> 
-              <br>
-                <br>
+               
                 <table style="width: 5%;">
                   <tr>
                     <td>
@@ -496,7 +549,7 @@
                 </table>
                 <h5 class="blue">CH Nageswara Rao</h5>
                 <h6>Myhome (Vihanga)-Gachibowi</h6>
-              <br>
+               
              </div>
           </div>
            
@@ -505,26 +558,38 @@
       <br><br><br> 
       </div>
 
-      <div class="bgCol22 container-fluid carouselWidth">
-        <br><br><br><br><br>
-        <h1 class="text-center mb-3 blue">Connect with us</h1>
-        <h6 class="text-center mb-3">Reach out on WhatsApp or give us a call for the best home design experience.</h6><br>
-        <div class="container textCenter">
+
+      <div>
+        <div class="bgCol1 divSpecs">
           <div class="row">
-            <div class="col-sm"></div>
-             <div class="col-sm cntUs">
-              <span class="cntUsTxt"><i class="fa-sharp fa-solid fa-phone"></i>&nbsp;&nbsp;<b >+91 9059 109 056</b></span>
-            </div>&nbsp;&nbsp;&nbsp;&nbsp;
-            <div class="col-sm cntUs">
-              <span class="cntUsTxt"> <a data-v-9a1f2842="" href="https://wa.me/9858156156/?text=Hello i5 interiors Team, I am interested to know more about the home 
-                interior designs/renovation services." target="_blank" id="fixed-page-widget"><i class="fa-brands fa-square-whatsapp">
-                </i>&nbsp;<b>+91 9858 156 156</b></a> </span>
-            </div>
+         
+          <div class="col-md-5 padZ">
+            <img src="./images/main3.jpg" alt="" class="rr"/>
+          </div>
+              <div class="col-md-7">
+                <br><br><br><br><br>
+                  <h1 class="text-center mb-3 blue">Connect with us</h1>
+                  <h6 class="text-center mb-3">Reach out on WhatsApp or give us a call to enjoy the ultimate home design experience!</h6><br><br>
+                  <div class="container textCenter">
+                    <div class="row">
+                      <div class="col-sm"></div>
+                      <div class="col-sm cntUs">
+                        <span class="cntUsTxt"><i class="fa-sharp fa-solid fa-phone"></i>&nbsp;&nbsp;<b >+91 9059 109 056</b></span>
+                      </div>&nbsp;&nbsp;&nbsp;&nbsp;
+                      <div class="col-sm cntUs">
+                        <span class="cntUsTxt"> <a data-v-9a1f2842="" href="https://wa.me/9858156156/?text=Hello i5 interiors Team, I am interested to know more about the home 
+                          interior designs/renovation services." target="_blank" id="fixed-page-widget"><i class="fa-brands fa-square-whatsapp">
+                          </i>&nbsp;<b>+91 9858 156 156</b></a> </span>
+                      </div>
              <div class="col-sm"></div>
           </div>
         </div> 
-        <br><br><br><br><br>
+        <br><br> 
+             
+          </div>
+        </div>
       </div>
+          
 
       <div class="container-fluid carouselWidth">
         <br><br><br><br><br>
@@ -533,31 +598,21 @@
         <div class="container textCenter">
           <div class="row">
             <!-- <marquee behavior="scroll" direction="left" loop="0">  -->
-              <table>
-                <tr>
-                  <td>
-                    <img src="./images/pl.png" alt="fabindia" class="hbrand"/>
-                  </td>
-                  <td>
-                    <img src="./images/ap.png"   alt="asian-paints" class="hbrand"/>
-                  </td>
-                  <td>
-                    <img src="./images/cp.png"   alt="asian-paints" class="hbrand"/>
-                  </td>
-                  <td>
-                    <img src="./images/fc.png"   alt="asian-paints" class="hbrand"/>
-                  </td>
-                  <td>
-                    <img src="./images/sg.png"   alt="asian-paints" class="hbrand"/>
-                  </td>
-                  <td>
-                    <img src="./images/vn.png"   alt="asian-paints" class="hbrand"/>
-                  </td>
-                  <td>
-                    <img src="./images/sm.png"   alt="asian-paints" class="hbrand"/>
-                  </td>
-                </tr>
-              </table>
+              
+                   <span><img src="./images/pl.png" alt="fabindia" class="hbrand"/></span> 
+                 
+                   <span><img src="./images/ap.png"   alt="asian-paints" class="hbrand"/></span>
+                   
+                   <span><img src="./images/cp.png"   alt="asian-paints" class="hbrand"/></span> 
+                   
+                   <span><img src="./images/fc.png"   alt="asian-paints" class="hbrand"/></span> 
+                  
+                   <span><img src="./images/sg.png"   alt="asian-paints" class="hbrand"/></span> 
+                  
+                   <span><img src="./images/vn.png"   alt="asian-paints" class="hbrand"/></span> 
+                   
+                   <span> <img src="./images/sm.png"   alt="asian-paints" class="hbrand"/></span>
+                   
            <!-- </marquee>   -->
           </div>
             
@@ -567,34 +622,27 @@
       </div>
 
 
-      <div class="container-fluid carouselWidth abt">
+      <div class="container-fluid carouselWidth abt bg3 borderTB">
         <br><br><br><br>
         <h1 class="text-center mb-3 blue">About Us</h1>
-        <h6 class="text-center mb-3">Some people look for a beautiful place, smart people makes a place beautiful by choosing i5 </h6><br>
+        <h6 class="text-center mb-3">Some people look for a beautiful place, smart people makes a place beautiful by choosing i5. </h6><br>
         <div class="container">
           <div class="row">
-            
-               
+   
                 <p><i class="fa-sharp fa-solid fa-star gold"></i> Welcome to our interior design studio! At i5 interiors, we are passionate about creating exceptional spaces that 
                   reflect the unique personalities and lifestyles of our clients. With a keen eye for detail and a commitment to delivering 
                   excellence, we strive to transform ordinary interiors into extraordinary living environments.
-                </p>
-               
-            
-            <br>
+                </p>  <br>
                
                 <p><i class="fa-sharp fa-solid fa-star gold"></i> Our talented team of interior designers, architects, and creative professionals work together to bring your vision to life. 
               With diverse backgrounds and a wealth of experience, we collaborate closely with you to understand your goals, preferences, and aspirations. 
               By combining our expertise with your input, we ensure that every project is tailored to your specific needs.
-                </p>
-              
-            <br>
+                </p>  <br>
               <p><i class="fa-sharp fa-solid fa-star gold"></i> At i5 interiors, client satisfaction is our top priority. 
               We believe in open communication, transparency, and collaboration throughout the design process. 
               We listen attentively to your ideas, provide regular updates, and ensure that your expectations are met or exceeded.
                Our goal is to create spaces that not only meet your needs but also bring joy and inspiration to your everyday life.</p>
-              
-              
+     
           </div>
         </div>
         <br><br><br><br>
@@ -609,16 +657,16 @@
         <!-- Grid container -->
          
         
-<div class=" ">
+<div class="footerBG">
 
-  <footer class="text-white text-center text-lg-start" style="background-color: #23242a;">
+  <footer class="text-white text-center text-lg-start">
     <!-- Grid container -->
     <div class="container p-4">
       <!--Grid row-->
       <div class="row mt-4">
         <!--Grid column-->
         <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
-          <h5 class="mb-4 blue">i5 INTERIORS</h5>
+          <h5 class="mb-4">i5 INTERIORS</h5>
 
           <p style="text-align: justify;">
             We look forward to embarking on a creative journey with you, turning your dreams into reality.</p>
@@ -666,7 +714,7 @@
 
         <!--Grid column-->
         <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
-          <h5 class="text-uppercase mb-4 blue">Opening hours</h5>
+          <h5 class="text-uppercase mb-4">Opening hours</h5>
 
           <table class="table text-center text-white">
             <tbody class="font-weight-normal">
@@ -701,5 +749,12 @@
         
       </footer>
     </div>
+    <button
+    type="button"
+    class="btn btn-warning btn-floating btn-sm"
+    id="btn-back-to-top"
+    >
+<i class="fas fa-arrow-up"></i>
+</button>
   </body>
 </html>
