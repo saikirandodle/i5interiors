@@ -1,3 +1,7 @@
+*{
+  font-family: 'Poppins', sans-serif;
+}
+
 .logo{
   height: 70px;
 }
@@ -365,7 +369,7 @@ h4{
 }
 
 .fb{
-  font-weight: 700;
+  font-weight: 600;
   border-bottom: 1px solid #cccccc;
   padding-bottom: 10px;
   text-align: center;
@@ -406,14 +410,25 @@ background-color: #be1cbb;
 background-color: #278363;
 background-color: #00ebf1; */
 
+.f600{
+  font-weight: 600 !important ;
+}
+
+.fnt18{
+  font-size: 18px;
+}
+
+.orange1{
+  color: #ffb300;
+}
 .gray{
   color: #5d5d5d;
 }
 
 .dash {
-  width: 11%;
+  width: 12%;
   border-top: 3px dotted #006ebe;
-  margin: 50px -15px 0px -9px;
+  margin: 50px -22px -14px -19px;
   }
 
 ._5S-v{
@@ -442,9 +457,9 @@ background-color: #00ebf1; */
   animation: fa-spin 2s infinite linear;
 } */
 
-.f18{
+/* .f18{
   font-size: 18px
-}
+} */
 
  .bg3 {
   background-image: url(https://img.freepik.com/premium-vector/technology-connection-digital-data-white-background_32996-546.jpg?w=1060);
