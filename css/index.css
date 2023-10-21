@@ -13,7 +13,7 @@
     background-color: #f0f0f0;
     padding: 10px;
     margin-top: 20px;
-    box-shadow: inset 0 0 10px #d0d0d0;
+    border: 1px solid #bababa;
   }
 
   .bs{
@@ -41,9 +41,67 @@
     padding-right: 15px;
   }
 
+  .f40{
+    font-size: 40px;
+    padding: 10px;
+    position: relative;
+   }
+  
+   .f35{
+    font-size: 35px !important;
+    padding: 10px;
+   }
+
+   .sotd{
+    position: relative;
+    top: -3px;
+   }
+
+   .sbs{
+    position: relative;
+    top: -8px
+   }
+
+   .sbf{
+    position: relative;
+    top: -8px
+   }
+
+   .spq{
+    position: relative;
+    top: -6px
+   }
+
+   .sbd{
+    position: relative;
+    top: -5px
+   }
+
+   .margin30{
+    margin-top: 30px;
+   }
+
+   .margin75{
+    margin-top: 75px !important;
+   }
+
+   .dashwidth{
+    width: 26% !important;
+   }
+
+   .hide{
+    display: none;
+   }
+
   }
 
-  
+  .numbering{
+    opacity: .3;
+    font-size: 25px;
+    color: #ff1300;
+    padding-right: 2px;
+  }
+
   body{
   font-size: 17px;
   line-height: 24px;
@@ -405,7 +463,8 @@ h1, h2, h3, h4, h5, h6 {
 .hbrand{
   height: 112px;
   padding: 30px;
-  background-color: #FBEAEB; 
+  /* background-color: #FBEAEB;  */
+  border: 1px solid #e2e2e2;
   margin-right: 2px;
 }
 
@@ -443,7 +502,7 @@ h4{
 }
 
 .custCard{
-  background-color: #deb88726;
+  /* background-color: #deb88726; */
 }
 
 .abt{
@@ -456,12 +515,12 @@ h4{
 }
 
 .m2{
-  background-color: #c88282;
+  background-color: #bd6f6f;
   border-radius: 10px;
 }
 
 .m3{
-  background-color: #afae72;
+  background-color: #a2a165;
   border-radius: 10px;
 }
 
@@ -496,7 +555,7 @@ h4{
 }
 
 .dash {
-  width: 12%;
+  width: 8%;
   border-top: 3px dotted #006ebe;
   margin: 50px -22px -14px -19px;
   }
@@ -517,8 +576,7 @@ h4{
 }
 
 .card {
-  border: 1px solid rgb(218 218 218);
-  box-shadow: inset 0 0 10px #727070;
+  border: 1px solid rgb(216 216 216);
 }
 
 /* .fa-spin-hover:hover {
@@ -640,3 +698,7 @@ ul.pad30{
   100% { transform: skewX(0deg); }
  }
  
+ .f20{
+   font-size: 25px;
+ }
+
