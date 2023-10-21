@@ -400,12 +400,20 @@ p.white{
   color: #fe29be;
 }
 
+.brown{
+  color: #c56d6d;
+}
+
 .orange{
   color: #feaa3b;
 }
 
 .greend{
-  color: #95fe2e;
+  color: #88ed26;
+}
+
+.brownd:hover{
+  color: #b06969;
 }
 
 .lblued{
