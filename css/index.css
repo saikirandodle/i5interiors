@@ -93,6 +93,15 @@
     display: none;
    }
 
+  .pad3{
+    padding-left: 3px;
+  }
+
+  .ff{
+    padding: 27px !important;
+    margin-right: 5px;
+  }
+
   }
 
   .numbering{
