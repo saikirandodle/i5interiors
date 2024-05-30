@@ -1,4 +1,14 @@
 @media (max-width: 520px) {
+
+  #show_bg_2{
+    min-height: 530px;
+    height: 0px !important;
+  }
+
+  .alnRt{
+    text-align: right;
+  }
+
   .my-logo {
     min-width: 100%;
     min-height: 100%;
@@ -43,7 +53,7 @@
 
   .f40{
     font-size: 40px;
-    padding: 10px;
+    padding: 10px 0px 10px 0px;
     position: relative;
    }
   
@@ -352,7 +362,7 @@ span a {
 }
 
 #show_bg_2 {
-  background-image: linear-gradient(to top, rgb(117 116 116 / 0%), rgb(255 255 255)), url("../images/mainBnr.png");
+  background-image: linear-gradient(to top, rgb(117 116 116 / 0%), rgb(255 255 255)), url("../images/mainBnr1.png");
   width: 100%;
   height: 750px;
   background-size: cover;
@@ -670,7 +680,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 ul.pad30{
-  padding-left: 30px;
+  padding-left: 22px;
 }
 
 .f600{
@@ -724,6 +734,16 @@ ul.pad30{
  }
  
  .f20{
-   font-size: 25px;
+   font-size: 30px;
  }
 
+ .btn-warning1{
+  color: #ffbb29; 
+  background-color: #86438b; 
+  border-color: #86438b;
+ }
+
+ .btn:hover {
+  color: #ffffff;
+  text-decoration: none;
+}
